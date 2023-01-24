@@ -1,6 +1,3 @@
-import os
-import time
-import asyncio
 import logging
 from config import Config
 from pyrogram import Client
@@ -32,7 +29,7 @@ db = mongo.HowAllBot
 
 #client
 app = Client(
-    "SupremeStark",
+    "HowAllBot",
     api_id = API_ID,
     api_hash = API_HASH,
     bot_token = TOKEN )
