@@ -19,7 +19,8 @@ if not START_PIC:
 LOG = Console()
 
 #logger
-logging.basicConfig(level=logging.INFO)
+log = logging.getLogger('[HowAllBot]')
+logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 
 #database
 mongo = AsyncIOMotorClient(MONGO_DB)
