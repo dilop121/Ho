@@ -21,6 +21,8 @@ LOG = Console()
 mongo = AsyncIOMotorClient(MONGO_DB)
 db = mongo.HowAllBot
 
+import logging
+logging.basicConfig(level=logging.INFO)
 
 #client
 app = Client(
