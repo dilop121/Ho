@@ -1,4 +1,6 @@
 from HowAllBot import app
+from pyrogram.types import (InlineQueryResultArticle, InputTextMessageContent,
+                            InlineKeyboardMarkup, InlineKeyboardButton)
 
 
 @app.on_inline_query()
