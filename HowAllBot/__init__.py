@@ -1,4 +1,3 @@
-import logging
 from config import Config
 from pyrogram import Client
 from rich.console import Console
@@ -18,10 +17,6 @@ if not START_PIC:
 #rich
 LOG = Console()
 
-#logger
-log = logging.getLogger('[HowAllBot]')
-logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
-
 #database
 mongo = AsyncIOMotorClient(MONGO_DB)
 db = mongo.HowAllBot
@@ -34,6 +29,10 @@ app = Client(
     api_hash = API_HASH,
     bot_token = TOKEN )
     
-
+app.start()
+bot = app.get_me()
+BOT_ID = bot.id
+BOT_USERNAME = bot.username
+print(BOT_ID)
 
 
