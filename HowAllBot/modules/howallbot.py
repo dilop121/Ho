@@ -7,7 +7,10 @@ from pyrogram.types import (InlineQueryResultArticle, InputTextMessageContent,
 
 @app.on_inline_query()
 async def _app(_, inlinequery):
-    await inlinequery.answer(
+    string = query.query.lower()
+    if string == "":
+        await client.answer_inline_query(
+            query.id,
     results=[
         InlineQueryResultArticle(
         title = "💋 ʜᴏᴡ ʜᴏʀɴʏ ʏᴏᴜ ᴀʀᴇ !",
