@@ -206,6 +206,54 @@ async def answer(client, inline_query):
                     ]
                 )
             ),
+            InlineQueryResultArticle(
+                title="😚 ʜᴏᴡ sɪᴍᴘ ᴀʀᴇ ʏᴏᴜ",
+                input_message_content=InputTextMessageContent(
+                    f"😚 ɪ ᴀᴍ {random.randint(1,100)}% sɪᴍᴘ."
+                ),
+                
+                description="ғɪɴᴅ ᴏᴜᴛ ʜᴏᴡ sɪᴍᴘ ᴀʀᴇ ʏᴏᴜ",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton(
+                            "ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏᴄᴋ sɪᴢᴇ",
+                            switch_inline_query_current_chat=""
+                        )]
+                    ]
+                )
+            ),
+            InlineQueryResultArticle(
+                title="😌 ᴡʜᴀᴛ's ʏᴏᴜʀ ʙᴏᴏʙs sɪᴢᴇ",
+                input_message_content=InputTextMessageContent(
+                    f"🍒 ᴍʏ ʙᴏᴏʙs sɪᴢᴇ ɪs {random.randint(1,100)}!"
+                ),
+                
+                description="ғɪɴᴅ ᴏᴜᴛ ᴛʜᴇ sɪᴢᴇ ᴏғ ʏᴏᴜʀ ʙᴏᴏʙs",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton(
+                            "ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏᴄᴋ sɪᴢᴇ",
+                            switch_inline_query_current_chat=""
+                        )]
+                    ]
+                )
+            ),
+            InlineQueryResultArticle(
+                title="🧠 ʜᴏᴡ ɪǫ ᴀʀᴇ ʏᴏᴜ",
+                input_message_content=InputTextMessageContent(
+                    f"🧠 I ᴀᴍ {random.randint(1,150)} ɪǫ!"
+                ),
+                
+                description="ғɪɴᴅ ᴏᴜᴛ ʏᴏᴜʀ ɪq",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton(
+                            "ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏᴄᴋ sɪᴢᴇ",
+                            switch_inline_query_current_chat=""
+                        )]
+                    ]
+                )
+            ),
         ],
         cache_time=1
     )
