@@ -1,3 +1,4 @@
+import random 
 from HowAllBot import app
 from pyrogram.types import (InlineQueryResultArticle, InputTextMessageContent,
                             InlineKeyboardMarkup, InlineKeyboardButton)
