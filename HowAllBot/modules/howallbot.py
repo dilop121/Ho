@@ -23,7 +23,7 @@ async def _app(_, inlinequery):
                                 ),
                             ]
                         ]
-                    ))                                                                                                                                                                                                      
+                    )                                                                                                                                                                                                     
      ],
      cache_time=1)
     
