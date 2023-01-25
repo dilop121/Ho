@@ -11,10 +11,10 @@ async def _app(_, inlinequery):
     results=[
         InlineQueryResultArticle(
         title = "💋 ʜᴏᴡ ʜᴏʀɴʏ ʏᴏᴜ ᴀʀᴇ !",
-        description = "ғɪɴᴅ ᴏᴜᴛ ʜᴏᴡ ʜᴏʀɴʏ ʏᴏᴜ ᴀʀᴇ !",
         input_message_content=InputTextMessageContent
           (f"💋 I ᴀᴍ {random.randint(1,100)}% ʜᴏʀɴʏ .",)
         ),
+        description = "ғɪɴᴅ ᴏᴜᴛ ʜᴏᴡ ʜᴏʀɴʏ ʏᴏᴜ ᴀʀᴇ !",        
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Share your hornyness! 🔥",switch_inline_query="")]])
                                                                                                                                                                                                                                                                                                                                                             
      ],
