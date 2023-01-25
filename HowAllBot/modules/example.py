@@ -19,7 +19,7 @@ async def answer(client, inline_query):
                     [
                         [InlineKeyboardButton(
                             "sʜᴀʀᴇ ʏᴏᴜʀ ʜᴏʀɴʏɴᴇss! 🔥",
-                            switch_inline_query=""
+                            switch_inline_query_current_chat=""
                         )]
                     ]
                 )
