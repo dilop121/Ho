@@ -38,6 +38,8 @@ GUY_ABOVE = [
 
 NARUTO = ["ᴋᴜɴɪʜɪsᴀ","ʙᴀᴋɪ","sᴀsᴜᴋᴇ","ᴍɪɢʜᴛ ɢᴜʏ","ʟᴇᴇ","ɴᴀʀᴜᴛᴏ","ʜɪɴᴀᴛᴀ","sᴀᴋᴜʀᴀ","ɪɴᴏ","ᴋᴀᴋᴀsʜɪ","ᴍᴀᴅᴀʀᴀ","ʜᴀsʜɪʀᴀᴍᴀ","ᴛᴏʙɪʀᴀᴍᴀ","Iᴛᴀᴄʜɪ","ᴋɪʟʟᴇʀ ʙᴇᴇ","ᴢᴏʀᴏ 🛐","ᴍɪɴᴀᴛᴏ","ᴛsᴜɴᴀᴅᴇ","jɪʀᴀɪʏᴀ","ɴᴀɢᴀᴛᴏ","ɢᴀʀᴀᴀ","ᴘᴀɪɴ"]
 
+AOT = ["ᴇʀᴇɴ ʏᴇᴀɢᴇʀ","Lᴇᴠɪ Aᴄᴋᴇʀᴍᴀɴ","ᴍɪᴋᴀsᴀ ᴀᴄᴋᴇʀᴍᴀɴ","ᴀʀᴍɪɴ","Eʀᴡɪɴ sᴍɪᴛʜ","ᴘɪᴇᴄᴋ","sʜᴀsʜᴀ","Jᴇᴀɴ","ᴀɴɴɪᴇ","ʀᴇɪɴᴇʀ","ᴀɴɴɪᴇ","ᴢᴇᴀᴋ","ʜᴀɴɪɪ ᴢᴏᴇ"]
+
 @app.on_inline_query()
 async def answer(client, inline_query):
     await inline_query.answer(
@@ -133,6 +135,22 @@ async def answer(client, inline_query):
                     [
                         [InlineKeyboardButton(
                             "ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏᴄᴋ sɪᴢᴇ",
+                            switch_inline_query_current_chat=""
+                        )]
+                    ]
+                )
+            ),
+            InlineQueryResultArticle(
+                title="🔰 ᴡʜᴏ ᴀʀᴇ ʏᴏᴜ ғʀᴏᴍ ᴀᴛᴛᴀᴄᴋ ᴏɴ ᴛɪᴛᴀɴ",
+                input_message_content=InputTextMessageContent(
+                    f"🔰 ɪɴ ᴛʜᴇ ᴡᴏʀʟᴅ ᴏғ ᴀᴛᴛᴀᴄᴋ ᴏɴ ᴛɪᴛᴀɴ ɪ ᴀᴍ :\n\n ⭐ **{random.choice(AOT)}** ⭐"
+                ),
+                
+                description="ғɪɴᴅ ᴏᴜᴛ ᴡʜᴏ ᴀʀᴇ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴡᴏʀʟᴅ ᴏғ ᴀᴛᴛᴀᴄᴋ ᴏɴ ᴛɪᴛᴀɴ",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton(
+                            "ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ʀᴇsᴜʟᴛs",
                             switch_inline_query_current_chat=""
                         )]
                     ]
