@@ -99,7 +99,7 @@ async def answer(client, inline_query):
                 input_message_content=InputTextMessageContent(
                     f"💝 I ᴀᴍ {random.randint(1,100)}% ᴄᴜᴛᴇ."
                 ),
-                
+                thumb_url = "https://graph.org/file/3c91402bbcd58d5f9254f.jpg",
                 description="ғɪɴᴅ ᴏᴜᴛ ʏᴏᴜʀ ᴄᴜᴛᴇɴᴇss",
                 reply_markup=InlineKeyboardMarkup(
                     [
