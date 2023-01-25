@@ -17,7 +17,7 @@ async def _app(_, inlinequery):
         description = "ғɪɴᴅ ᴏᴜᴛ ʜᴏᴡ ʜᴏʀɴʏ ʏᴏᴜ ᴀʀᴇ !",        
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Share your hornyness! 🔥",switch_inline_query="")]])
                                                                                                                                                                                                                                                                                                                                                             
-     ],
+     )],
      cache_time=1)
     
     
