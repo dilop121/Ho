@@ -121,6 +121,22 @@ async def answer(client, inline_query):
                         )]
                     ]
                 )
+            ),
+            InlineQueryResultArticle(
+                title="🍆 ᴡʜᴀᴛ's ʏᴏᴜʀ ᴄᴏᴄᴋ sɪᴢᴇ",
+                input_message_content=InputTextMessageContent(
+                    f"🍆 ᴍʏ ᴄᴏᴄᴋ sɪᴢᴇ ɪs {random.randint(1,100)}ᴄᴍ!"
+                ),
+                
+                description="sᴇɴᴅ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ᴄᴏᴄᴋ sɪᴢᴇ",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton(
+                            "ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏᴄᴋ sɪᴢᴇ",
+                            switch_inline_query_current_chat=""
+                        )]
+                    ]
+                )
             )
         ],
         cache_time=1
