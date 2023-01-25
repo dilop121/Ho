@@ -67,7 +67,7 @@ async def answer(client, inline_query):
                 input_message_content=InputTextMessageContent(
                     random.choice(GUY_ABOVE)
                 ),
-                
+                thumb_url = "https://graph.org/file/ca51f7cd49e9e99db9db4.jpg",
                 description="sᴇᴇ ᴡʜᴏ ᴀɴᴅ ʜᴏᴡ ᴛʜᴇ ɢᴜʏ ɪs ᴀʙᴏᴠᴇ ʏᴏᴜ.",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -83,7 +83,8 @@ async def answer(client, inline_query):
                 input_message_content=InputTextMessageContent(
                     f"🤩 ɪɴ ᴛʜᴇ ᴡᴏʀʟᴅ ᴏғ ɴᴀʀᴜᴛᴏ ɪ ᴀᴍ :\n\n ⭐ **{random.choice(NARUTO)}** ⭐"
                 ),
-                
+                thumb_url = "https://telegra.ph/file/6e9f3d55445344d83e34b.jpg",
+
                 description="ғɪɴᴅ ᴏᴜᴛ ᴡʜᴏ ᴀʀᴇ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴡᴏʀʟᴅ ᴏғ ɴᴀʀᴜᴛᴏ",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -115,7 +116,7 @@ async def answer(client, inline_query):
                 input_message_content=InputTextMessageContent(
                     f"🏳‍🌈 I ᴀᴍ {random.randint(1,100)}% ɢᴀʏ."
                 ),
-                
+                thumb_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XBqdcAQasd4WLnb0OaQe7GP-iVUjXlNnxg&usqp=CAU", 
                 description="ғɪɴᴅ ᴏᴜᴛ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ɢᴀʏɴᴇss",
                 reply_markup=InlineKeyboardMarkup(
                     [
