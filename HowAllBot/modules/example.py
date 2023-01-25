@@ -40,6 +40,8 @@ NARUTO = ["ᴋᴜɴɪʜɪsᴀ","ʙᴀᴋɪ","sᴀsᴜᴋᴇ","ᴍɪɢʜᴛ ɢᴜ
 
 AOT = ["ᴇʀᴇɴ ʏᴇᴀɢᴇʀ","Lᴇᴠɪ Aᴄᴋᴇʀᴍᴀɴ","ᴍɪᴋᴀsᴀ ᴀᴄᴋᴇʀᴍᴀɴ","ᴀʀᴍɪɴ","Eʀᴡɪɴ sᴍɪᴛʜ","ᴘɪᴇᴄᴋ","sʜᴀsʜᴀ","Jᴇᴀɴ","ᴀɴɴɪᴇ","ʀᴇɪɴᴇʀ","ᴀɴɴɪᴇ","ᴢᴇᴀᴋ","ʜᴀɴɪɪ ᴢᴏᴇ"]
 
+ASS = ["ʜᴜɢᴇ","sᴍᴀʟʟ","ᴍᴇᴅɪᴜᴍ","ʟᴀʀɢᴇ"]
+
 @app.on_inline_query()
 async def answer(client, inline_query):
     await inline_query.answer(
@@ -155,7 +157,55 @@ async def answer(client, inline_query):
                         )]
                     ]
                 )
-            )
+            ),
+            InlineQueryResultArticle(
+                title="🫂 ʜᴏᴡ ᴍᴜᴄʜ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʜᴜɢ ᴏᴛʜᴇʀ.",
+                input_message_content=InputTextMessageContent(
+                    f"🫂 I ᴡᴀɴᴛ ᴛᴏ ʜᴜɢ ʏᴏᴜ {random.randint(1,100)}%!"
+                ),
+                
+                description="ғɪɴᴇ ᴏᴜᴛ ʜᴏᴡ ᴍᴜᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʜᴜɢ ᴏᴛʜᴇʀ ᴘᴇʀsᴏɴ ɪɴ ᴛʜɪs ᴄʜᴀᴛ.",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton(
+                            "ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏᴄᴋ sɪᴢᴇ",
+                            switch_inline_query_current_chat=""
+                        )]
+                    ]
+                )
+            ),
+            InlineQueryResultArticle(
+                title="🍑 ᴡʜᴀᴛ's ʏᴏᴜʀ ᴀss sɪᴢᴇ",
+                input_message_content=InputTextMessageContent(
+                    f"🍑 ᴍʏ ᴀss ɪs {random.choice(ASS)}"
+                ),
+                
+                description="ғɪɴᴅ ᴏᴜᴛ ᴛʜᴇ sɪᴢᴇ ᴏғ ʏᴏᴜʀ ᴀss",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton(
+                            "ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏᴄᴋ sɪᴢᴇ",
+                            switch_inline_query_current_chat=""
+                        )]
+                    ]
+                )
+            ),
+            InlineQueryResultArticle(
+                title="🙂 ʜᴏᴡ ʜᴀᴘᴘʏ ᴀʀᴇ ʏᴏᴜ",
+                input_message_content=InputTextMessageContent(
+                    f"🙂 ɪ ᴀᴍ {random.randint(1,100)}% ʜᴀᴘᴘʏ."
+                ),
+                
+                description="ᴡʜᴀᴛ's ʏᴏᴜʀ ʜᴀᴘᴘɪɴᴇss ʟᴇᴠᴇʟ!",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton(
+                            "ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏᴄᴋ sɪᴢᴇ",
+                            switch_inline_query_current_chat=""
+                        )]
+                    ]
+                )
+            ),
         ],
         cache_time=1
     )
