@@ -6,11 +6,8 @@ from pyrogram.types import (InlineQueryResultArticle, InputTextMessageContent,
 
 
 @app.on_inline_query()
-async def _app(_, inlinequery):
-    string = query.query.lower()
-    if string == "":
-        await client.answer_inline_query(
-            query.id,
+async def _app(_, inline_query):
+    await inline_query.answer(
     results=[
         InlineQueryResultArticle(
         title = "💋 ʜᴏᴡ ʜᴏʀɴʏ ʏᴏᴜ ᴀʀᴇ !",
@@ -18,7 +15,7 @@ async def _app(_, inlinequery):
           f"💋 I ᴀᴍ {random.randint(1,100)}% ʜᴏʀɴʏ .",)
         
         description = "ғɪɴᴅ ᴏᴜᴛ ʜᴏᴡ ʜᴏʀɴʏ ʏᴏᴜ ᴀʀᴇ !",        
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Share your hornyness! 🔥",switch_inline_query="")]])
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Share your hornyness! 🔥",switch_inline_query="")]]),
                                                                                                                                                                                                                                                                                                                                                             
      )],
      cache_time=1)
