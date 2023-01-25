@@ -8,17 +8,17 @@ async def answer(client, inline_query):
     await inline_query.answer(
         results=[
             InlineQueryResultArticle(
-                title="Installation",
+                title="💋 ʜᴏᴡ ʜᴏʀɴʏ ʏᴏᴜ ᴀʀᴇ !",
                 input_message_content=InputTextMessageContent(
-                    "Here's how to install **Pyrogram**"
+                    f"💋 ɪ ᴀᴍ {random.randint(1,100)}% ʜᴏʀɴʏ ."
                 ),
-                url="https://docs.pyrogram.org/intro/install",
-                description="How to install Pyrogram",
+                
+                description="ғɪɴᴅ ᴏᴜᴛ ʜᴏᴡ ʜᴏʀɴʏ ʏᴏᴜ ᴀʀᴇ !",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [InlineKeyboardButton(
-                            "Open website",
-                            url="https://docs.pyrogram.org/intro/install"
+                            "sʜᴀʀᴇ ʏᴏᴜʀ ʜᴏʀɴʏɴᴇss! 🔥",
+                            switch_inline_query=""
                         )]
                     ]
                 )
