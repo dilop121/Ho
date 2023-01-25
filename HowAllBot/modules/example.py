@@ -70,6 +70,22 @@ async def answer(client, inline_query):
                         )]
                     ]
                 )
+            ),
+            InlineQueryResultArticle(
+                title="🎈 ɢᴜʏ ᴀʙᴏᴠᴇ",
+                input_message_content=InputTextMessageContent(
+                    random.choice(GUY_ABOVE)
+                ),
+                
+                description="sᴇᴇ ᴡʜᴏ ᴀɴᴅ ʜᴏᴡ ᴛʜᴇ ɢᴜʏ ɪs ᴀʙᴏᴠᴇ ʏᴏᴜ.",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton(
+                            "ғɪɴᴅ ᴏᴜᴛ ʏᴏᴜʀ ʀᴇsᴜʟᴛ",
+                            switch_inline_query_current_chat=""
+                        )]
+                    ]
+                )
             )
         ],
         cache_time=1
