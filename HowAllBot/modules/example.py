@@ -77,7 +77,7 @@ async def answer(client, inline_query):
             InlineQueryResultArticle(
                 title="🔥 ᴡʜᴏ ᴀʀᴇ ʏᴏᴜ ғʀᴏᴍ ɴᴀʀᴜᴛᴏ",
                 input_message_content=InputTextMessageContent(
-                    f"ɪɴ ᴛʜᴇ ᴡᴏʀʟᴅ ᴏғ ɴᴀʀᴜᴛᴏ ɪ ᴀᴍ :\n\n ⭐ **{random.choice(NARUTO)}** ⭐"
+                    f"🤩 ɪɴ ᴛʜᴇ ᴡᴏʀʟᴅ ᴏғ ɴᴀʀᴜᴛᴏ ɪ ᴀᴍ :\n\n ⭐ **{random.choice(NARUTO)}** ⭐"
                 ),
                 
                 description="ғɪɴᴅ ᴏᴜᴛ ᴡʜᴏ ᴀʀᴇ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴡᴏʀʟᴅ ᴏғ ɴᴀʀᴜᴛᴏ",
@@ -85,6 +85,22 @@ async def answer(client, inline_query):
                     [
                         [InlineKeyboardButton(
                             "ғɪɴᴅ ᴏᴜᴛ ʏᴏᴜʀ ʀᴇsᴜʟᴛ",
+                            switch_inline_query_current_chat=""
+                        )]
+                    ]
+                )
+            ),
+            InlineQueryResultArticle(
+                title="🥺 ʜᴏᴡ ᴄᴜᴛᴇ ᴀʀᴇ ʏᴏᴜ",
+                input_message_content=InputTextMessageContent(
+                    f"💝 I ᴀᴍ {random.randint(1,100)}% ᴄᴜᴛᴇ."
+                ),
+                
+                description="ғɪɴᴅ ᴏᴜᴛ ʏᴏᴜʀ ᴄᴜᴛᴇɴᴇss",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton(
+                            "✨ sʜᴀʀᴇ ʏᴏᴜʀ ᴄᴜᴛᴇɴᴇss",
                             switch_inline_query_current_chat=""
                         )]
                     ]
