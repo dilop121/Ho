@@ -3,7 +3,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup 
 
 buttons = InlineKeyboardMarkup([[InlineKeyboardButton("sʜᴀʀᴇ ᴀɴʏ ᴛʜɪɴɢ ✌️",switch_inline_query="")]])
-buttons2 = InlineKeyboardMarkup([[InlineKeyboardButton("ɢɪᴛʜᴜʙ",url="https://github.com/SupremeStark/HowAllBot")]])
+buttons2 = InlineKeyboardMarkup([[InlineKeyboardButton("ɢɪᴛʜᴜʙ",url="https://github.com/fuxkll")]])
 
 START_TEXT = """
 ʜᴇʏ ᴀᴍ ɪᴜsᴛ ᴀ ғᴜɴ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ {}.
@@ -11,8 +11,8 @@ START_TEXT = """
 """
 
 REPO_TEXT = """
-[ʜᴇʀᴇ](https://github.com/SupremeStark/HowAllBot) ɪs ᴍʏ ʀᴇᴘᴏ
-ᴛʜᴀᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ [sᴛᴇᴠᴇ](https://t.me/STEVE_R0GERS_101)
+[ʜᴇʀᴇ](https://github.com/Fuck) ɪs ᴍʏ ʀᴇᴘᴏ
+ᴛʜᴀᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ [ᴅɪʟ](https://t.me/dil_sagar_121)
 """
 
 
